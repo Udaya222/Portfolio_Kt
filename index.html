@@ -1496,7 +1496,9 @@
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+
                     <div class="form-group">
                         <label for="name">Full Name *</label>
                         <input type="text" id="name" name="name" required>
@@ -1504,7 +1506,8 @@
                     
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="_replyto" required>
+
                     </div>
                     
                     <div class="form-group">
@@ -1661,74 +1664,7 @@
             counterObserver.observe(statsSection);
         }
 
-        // Contact form functionality
-        const contactForm = document.getElementById('contactForm');
-        const formStatus = document.getElementById('form-status');
 
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(contactForm);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-            
-            // Validate required fields
-            const requiredFields = ['name', 'email', 'message'];
-            const missingFields = requiredFields.filter(field => !formObject[field] || formObject[field].trim() === '');
-            
-            if (missingFields.length > 0) {
-                showFormStatus('Please fill in all required fields.', 'error');
-                return;
-            }
-            
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formObject.email)) {
-                showFormStatus('Please enter a valid email address.', 'error');
-                return;
-            }
-            
-            // Show loading state
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-            
-            try {
-                // Simulate form submission (replace with actual form handler)
-                await new Promise(resolve => setTimeout(resolve, 1500));
-                
-                // Success message
-                showFormStatus('Thank you for your message! I\'ll get back to you within 24 hours.', 'success');
-                contactForm.reset();
-                
-                // Log form data to console (for development)
-                console.log('Form submitted with data:', formObject);
-                
-            } catch (error) {
-                showFormStatus('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
-                console.error('Form submission error:', error);
-            } finally {
-                // Reset button state
-                submitButton.textContent = originalText;
-                submitButton.disabled = false;
-            }
-        });
-
-        // Show form status messages
-        function showFormStatus(message, type) {
-            formStatus.textContent = message;
-            formStatus.className = `form-status ${type}`;
-            formStatus.style.display = 'block';
-            
-            // Auto-hide after 5 seconds
-            setTimeout(() => {
-                formStatus.style.display = 'none';
-            }, 5000);
-        }
 
         // Back to top button functionality
         const backToTopButton = document.getElementById('backToTop');
@@ -1921,4 +1857,5 @@
         });
     </script>
 </body>
+
 </html>
