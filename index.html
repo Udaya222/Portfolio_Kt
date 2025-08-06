@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udayakumar Murugesan - Digital Marketing Specialist</title>
+    <meta name="description" content="Professional Digital Marketing Specialist with 8+ years of expertise in growth marketing, social media campaigns, and digital performance strategies.">
+    
+    <!-- External Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        /* Variables */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #3b82f6;
+            --text-color: #1f2937;
+            --text-light: #6b7280;
+            --background: #ffffff;
+            --background-light: #f9fafb;
+            --border-color: #e5e7eb;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            --shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.15);
+            --gradient: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            --border-radius: 12px;
+            --transition: all 0.3s ease;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo h3 {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-color);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-full {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px 80px;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about {
+            background: var(--background-light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-description {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .about-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .detail-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            width: 20px;
+        }
+
+        .detail-item a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .about-img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .core-strengths {
+            text-align: center;
+        }
+
+        .strengths-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 2rem;
+        }
+
+        .strengths-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .strength-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .strength-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .strength-item i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        /* Skills Section */
+        .skills-categories {
+            display: grid;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .skill-category {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .category-title i {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+        }
+
+        .skill-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        .skill-tag {
+            background: var(--background-light);
+            color: var(--text-color);
+            padding: 0.8rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .tools-section {
+            background: var(--background-light);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+        }
+
+        .tools-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .tool-category h4 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .tool-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tool-item {
+            background: white;
+            padding: 0.6rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: var(--transition);
+        }
+
+        .tool-item:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Experience Section */
+        .experience {
+            background: var(--background-light);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 100%;
+            background: var(--gradient);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: calc(50% + 2rem);
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: calc(50% + 2rem);
+            margin-right: 0;
+            text-align: left;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: var(--shadow);
+            z-index: 1;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .company {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .duration {
+            color: var(--text-light);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .job-description ul {
+            list-style: none;
+        }
+
+        .job-description li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .job-description li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+
+        /* Achievements Section */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .achievement-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .achievement-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .achievement-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .achievement-icon i {
+            font-size: 2rem;
+            color: white;
+        }
+
+        .achievement-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .achievement-text {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .certifications {
+            background: var(--background-light);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 3rem;
+        }
+
+        .cert-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .cert-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .cert-item i {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        .education {
+            text-align: center;
+        }
+
+        .edu-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .edu-item {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .edu-item h4 {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .edu-item p {
+            color: var(--text-light);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--background-light);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-top: 0.2rem;
+        }
+
+        .contact-item h4 {
+            color: var(--text-color);
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Form Styles */
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-family: inherit;
+            transition: var(--transition);
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-status {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            display: none;
+        }
+
+        .form-status.success {
+            background: #d1fae5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+        }
+
+        .form-status.error {
+            background: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fca5a5;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-color);
+            color: white;
+            padding: 3rem 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-text p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .footer-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            
+            .hero-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 60px;
+                margin-right: 0;
+                text-align: left;
+            }
+            
+            .timeline-marker {
+                left: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: var(--shadow);
+                transform: translateY(-10px);
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .nav-toggle {
+                display: block;
+            }
+            
+            .strengths-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 100px 15px 60px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .stat-item,
+            .strength-item,
+            .skill-category,
+            .timeline-content,
+            .achievement-card,
+            .contact-form {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Udayakumar M.</h3>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">Udayakumar Murugesan</h1>
+                <h2 class="hero-subtitle">Digital Marketing Specialist</h2>
+                <p class="hero-description">
+                    Dynamic and performance-driven Digital Marketing Professional with 8+ years of proven expertise in growth marketing, social media campaigns, and digital performance strategies across B2B and B2C sectors.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80" alt="Professional Digital Marketing Workspace" class="hero-img">
+            </div>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="8">0</h3>
+                <p class="stat-label">Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="180">0</h3>
+                <p class="stat-label">Organic Traffic Growth %</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="35">0</h3>
+                <p class="stat-label">CAC Reduction %</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-count="25">0</h3>
+                <p class="stat-label">K+ Instagram Community</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Driving ROI through data-led strategies and performance optimization</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+                    <p class="about-description">
+                        I'm a results-driven digital marketing professional with expertise in scaling campaigns, boosting engagement, and delivering high-impact results across various platforms. My approach combines strategic thinking with hands-on execution to drive measurable business growth.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>udayakumarmurugesan0@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9003656216</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Coimbatore, TN 641035</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/udaya-kumar-ab637b175/" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <span>Born: January 30, 1995</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-flag"></i>
+                            <span>Nationality: Indian</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Marital Status: Married</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Modern Office Setup" class="about-img">
+                </div>
+            </div>
+
+            <div class="core-strengths" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3 class="strengths-title">Core Strengths</h3>
+                <div class="strengths-grid">
+                    <div class="strength-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Growth Marketing</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Social Media Strategy</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-search"></i>
+                        <span>SEO & SEM</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-bullseye"></i>
+                        <span>Meta & Google Ads</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-robot"></i>
+                        <span>Marketing Automation</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>Email & WhatsApp Campaigns</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-analytics"></i>
+                        <span>Performance Analytics</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-vial"></i>
+                        <span>A/B Testing</span>
+                    </div>
+                    <div class="strength-item">
+                        <i class="fas fa-megaphone"></i>
+                        <span>Brand Awareness Campaigns</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Comprehensive digital marketing capabilities across all major platforms</p>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Performance Marketing -->
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="category-title">
+                        <i class="fas fa-rocket"></i>
+                        Performance Marketing
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Customer Acquisition & Retention</span>
+                        <span class="skill-tag">Google Ads</span>
+                        <span class="skill-tag">Meta Ads</span>
+                        <span class="skill-tag">LinkedIn Ads</span>
+                        <span class="skill-tag">Marketing Funnel Optimization</span>
+                        <span class="skill-tag">Conversion Rate Optimization</span>
+                        <span class="skill-tag">Campaign Budgeting & ROAS Analysis</span>
+                        <span class="skill-tag">A/B Testing & Experimentation</span>
+                        <span class="skill-tag">Data-Driven Decision Making</span>
+                    </div>
+                </div>
+
+                <!-- Social Media Marketing -->
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <h3 class="category-title">
+                        <i class="fas fa-hashtag"></i>
+                        Social Media Marketing
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Instagram Strategy</span>
+                        <span class="skill-tag">Facebook Marketing</span>
+                        <span class="skill-tag">LinkedIn Campaigns</span>
+                        <span class="skill-tag">Twitter/X Marketing</span>
+                        <span class="skill-tag">Content Calendar Planning</span>
+                        <span class="skill-tag">Reel & Video Content Planning</span>
+                        <span class="skill-tag">Influencer Outreach & Collaboration</span>
+                        <span class="skill-tag">Community Building & Audience Growth</span>
+                        <span class="skill-tag">Hashtag Research & Social Listening</span>
+                        <span class="skill-tag">Paid Social Ads</span>
+                        <span class="skill-tag">Post & Story Performance Analytics</span>
+                        <span class="skill-tag">Crisis Management & Brand Monitoring</span>
+                    </div>
+                </div>
+
+                <!-- Content & Creative -->
+                <div class="skill-category" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Content & Creative
+                    </h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Copywriting for Engagement</span>
+                        <span class="skill-tag">Brand Storytelling & Engagement Tactics</span>
+                        <span class="skill-tag">Visual Content Planning</span>
+                        <span class="skill-tag">Canva</span>
+                        <span class="skill-tag">Figma Basics</span>
+                        <span class="skill-tag">Multi-platform Campaign Execution</span>
+                        <span class="skill-tag">Crisis Management</span>
+                        <span class="skill-tag">Brand Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="tools-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <h3 class="tools-title">Tools & Platforms</h3>
+                <div class="tools-grid">
+                    <div class="tool-category">
+                        <h4>Advertising</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">Google Ads</span>
+                            <span class="tool-item">Meta Ads</span>
+                            <span class="tool-item">LinkedIn Ads</span>
+                            <span class="tool-item">Twitter Ads</span>
+                        </div>
+                    </div>
+                    <div class="tool-category">
+                        <h4>Analytics</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">GA4</span>
+                            <span class="tool-item">Google Tag Manager</span>
+                            <span class="tool-item">Hotjar</span>
+                            <span class="tool-item">Looker Studio</span>
+                        </div>
+                    </div>
+                    <div class="tool-category">
+                        <h4>SEO</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">Ahrefs</span>
+                            <span class="tool-item">SEMrush</span>
+                            <span class="tool-item">Screaming Frog</span>
+                        </div>
+                    </div>
+                    <div class="tool-category">
+                        <h4>CRM & Automation</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">Mailchimp</span>
+                            <span class="tool-item">HubSpot</span>
+                            <span class="tool-item">Zoho CRM</span>
+                            <span class="tool-item">WhatsApp API</span>
+                        </div>
+                    </div>
+                    <div class="tool-category">
+                        <h4>Design & CMS</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">Canva</span>
+                            <span class="tool-item">WordPress</span>
+                            <span class="tool-item">Figma</span>
+                        </div>
+                    </div>
+                    <div class="tool-category">
+                        <h4>Project Tools</h4>
+                        <div class="tool-items">
+                            <span class="tool-item">Trello</span>
+                            <span class="tool-item">Slack</span>
+                            <span class="tool-item">Notion</span>
+                            <span class="tool-item">Asana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">8+ years of driving digital marketing success across diverse industries</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Current Role -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Senior Digital Marketing Specialist</h3>
+                        <h4 class="company">SBNA Software Solutions</h4>
+                        <p class="duration">July 2022 – Current</p>
+                        <div class="job-description">
+                            <ul>
+                                <li>Spearheaded full-funnel growth strategies resulting in a 3.5x increase in qualified B2B leads</li>
+                                <li>Managed a monthly ad budget of ₹1.5L+ across Meta, Google Ads, and LinkedIn</li>
+                                <li>Scaled social media engagement by 300% with reel campaigns and influencer partnerships</li>
+                                <li>Automated lead nurturing using Mailchimp + CRM integrations</li>
+                                <li>Created dashboards to track CAC, CPL, ROAS, and funnel drop-off</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Role 1 -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Senior Digital Marketing Executive</h3>
+                        <h4 class="company">Vserve Ebusiness Solutions</h4>
+                        <p class="duration">2019 – 2022</p>
+                        <div class="job-description">
+                            <ul>
+                                <li>Executed global digital campaigns for US/UK-based eCommerce clients</li>
+                                <li>Achieved 200% SEO traffic growth in 6 months via technical audits + backlink strategies</li>
+                                <li>Reduced Meta Ads CPL by 40% with targeted custom audience and lookalike ads</li>
+                                <li>Built and managed multi-platform content calendars and influencer outreach plans</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Role 2 -->
+                <div class="timeline-item" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Digital Marketing Executive</h3>
+                        <h4 class="company">Webseowire</h4>
+                        <p class="duration">2018 – 2019</p>
+                        <div class="job-description">
+                            <ul>
+                                <li>Delivered 50+ client campaigns focused on SEO, SMM, and PPC</li>
+                                <li>Specialized in on-page optimization, keyword research, and Google Analytics reports</li>
+                                <li>Handled multiple SME accounts and successfully increased lead generation by 2.5x</li>
+                                <li>Designed UTM tracking and landing page A/B testing for paid campaigns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Previous Role 3 -->
+                <div class="timeline-item" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="job-title">Marketing Associate</h3>
+                        <h4 class="company">Personiv</h4>
+                        <p class="duration">2017 – 2018</p>
+                        <div class="job-description">
+                            <ul>
+                                <li>Assisted in content planning, email marketing, and brand campaigns</li>
+                                <li>Collaborated with cross-functional design and dev teams for landing pages</li>
+                                <li>Contributed to building an internal brand engagement campaign that improved team retention</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Key Achievements</h2>
+                <p class="section-subtitle">Proven track record of delivering exceptional results</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="achievement-number">180%</div>
+                    <p class="achievement-text">Increased organic traffic by 180% YOY for a global SaaS client</p>
+                </div>
+
+                <div class="achievement-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="achievement-number">35%</div>
+                    <p class="achievement-text">Reduced CAC by 35% across performance campaigns in the last fiscal year</p>
+                </div>
+
+                <div class="achievement-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-number">25K+</div>
+                    <p class="achievement-text">Built a 25K+ Instagram community for a product-led brand from scratch</p>
+                </div>
+
+                <div class="achievement-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="achievement-icon">
+                        <i class="fas fa-envelope-open"></i>
+                    </div>
+                    <div class="achievement-number">20%+</div>
+                    <p class="achievement-text">Achieved 20%+ open rates on automated email drip campaigns</p>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3 class="cert-title">Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <i class="fab fa-hubspot"></i>
+                        <span>HubSpot Inbound Marketing Certification</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn Marketing Strategy Certificate</span>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>Social Media Marketing Certification</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="education" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <h3 class="edu-title">Education</h3>
+                <div class="edu-item">
+                    <h4>Bachelor of Electronics and Communication Engineering</h4>
+                    <p>SNS College of Technology, Coimbatore (2014 – 2017)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to discuss your next digital marketing project?</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always excited to work on challenging digital marketing projects and help businesses achieve their growth goals. Whether you need performance marketing, social media strategy, or comprehensive digital campaigns, I'm here to help.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:udayakumarmurugesan0@gmail.com">udayakumarmurugesan0@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+919003656216">+91 9003656216</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Coimbatore, Tamil Nadu 641035</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/udaya-kumar-ab637b175/" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="performance-marketing">Performance Marketing</option>
+                            <option value="social-media">Social Media Marketing</option>
+                            <option value="seo">SEO & Content Marketing</option>
+                            <option value="email-marketing">Email Marketing</option>
+                            <option value="marketing-automation">Marketing Automation</option>
+                            <option value="full-strategy">Complete Digital Strategy</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, goals, and how I can help you achieve success..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>&copy; 2025 Udayakumar Murugesan. All rights reserved.</p>
+                <p>Digital Marketing Specialist | Performance Marketing Expert</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/udaya-kumar-ab637b175/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:udayakumarmurugesan0@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+919003656216" title="Phone">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        });
+
+        // Navigation functionality
+        const navbar = document.getElementById('navbar');
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Mobile menu toggle
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Animated counters for statistics
+        const counters = document.querySelectorAll('.stat-number');
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const current = parseInt(counter.innerText);
+                const increment = target / 100;
+                
+                if (current < target) {
+                    counter.innerText = Math.ceil(current + increment);
+                    setTimeout(() => animateCounters(), 20);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+
+        // Intersection Observer for counter animation
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.hero-stats');
+        if (statsSection) {
+            counterObserver.observe(statsSection);
+        }
+
+        // Contact form functionality
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(contactForm);
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            
+            // Validate required fields
+            const requiredFields = ['name', 'email', 'message'];
+            const missingFields = requiredFields.filter(field => !formObject[field] || formObject[field].trim() === '');
+            
+            if (missingFields.length > 0) {
+                showFormStatus('Please fill in all required fields.', 'error');
+                return;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formObject.email)) {
+                showFormStatus('Please enter a valid email address.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+            
+            try {
+                // Simulate form submission (replace with actual form handler)
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+                // Success message
+                showFormStatus('Thank you for your message! I\'ll get back to you within 24 hours.', 'success');
+                contactForm.reset();
+                
+                // Log form data to console (for development)
+                console.log('Form submitted with data:', formObject);
+                
+            } catch (error) {
+                showFormStatus('Sorry, there was an error sending your message. Please try again or contact me directly.', 'error');
+                console.error('Form submission error:', error);
+            } finally {
+                // Reset button state
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+
+        // Show form status messages
+        function showFormStatus(message, type) {
+            formStatus.textContent = message;
+            formStatus.className = `form-status ${type}`;
+            formStatus.style.display = 'block';
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 5000);
+        }
+
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Active navigation link highlighting
+        function updateActiveNavLink() {
+            const sections = document.querySelectorAll('section');
+            const scrollPos = window.pageYOffset + 150;
+            
+            sections.forEach(section => {
+                const top = section.offsetTop;
+                const bottom = top + section.offsetHeight;
+                const id = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                
+                if (navLink) {
+                    if (scrollPos >= top && scrollPos <= bottom) {
+                        navLinks.forEach(link => link.classList.remove('active'));
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroImage = document.querySelector('.hero-img');
+            
+            if (heroImage) {
+                const rate = scrolled * -0.5;
+                heroImage.style.transform = `translateY(${rate}px)`;
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Skill tags hover effect
+        document.querySelectorAll('.skill-tag, .tool-item').forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                e.target.style.transform = 'translateY(-3px) scale(1.05)';
+            });
+            
+            item.addEventListener('mouseleave', (e) => {
+                e.target.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Timeline items animation on scroll
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateX(0)';
+                }
+            });
+        }, { threshold: 0.3 });
+
+        timelineItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateX(-50px)';
+            item.style.transition = 'all 0.6s ease-out';
+            timelineObserver.observe(item);
+        });
+
+        // Achievement cards stagger animation
+        const achievementCards = document.querySelectorAll('.achievement-card');
+        const achievementObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        achievementCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'all 0.6s ease-out';
+            achievementObserver.observe(card);
+        });
+
+        // Smooth reveal animations for elements
+        function revealOnScroll() {
+            const elements = document.querySelectorAll('.hover-lift');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('fade-in-up');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            revealOnScroll();
+            updateActiveNavLink();
+            
+            // Add smooth reveal to all cards and items
+            document.querySelectorAll('.stat-item, .strength-item, .skill-category, .cert-item').forEach(item => {
+                item.classList.add('hover-lift');
+            });
+        });
+
+        // Performance optimization - throttle scroll events
+        function throttle(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Apply throttling to scroll events
+        const throttledScroll = throttle(() => {
+            updateActiveNavLink();
+            revealOnScroll();
+        }, 100);
+
+        window.addEventListener('scroll', throttledScroll);
+
+        // Add loading class to body when page loads
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Error handling for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', (e) => {
+                console.warn('Failed to load image:', e.target.src);
+                // Optionally add a placeholder or fallback image
+                e.target.style.display = 'none';
+            });
+        });
+
+        // Print styles trigger
+        window.addEventListener('beforeprint', () => {
+            document.body.classList.add('printing');
+        });
+
+        window.addEventListener('afterprint', () => {
+            document.body.classList.remove('printing');
+        });
+    </script>
+</body>
+</html>
